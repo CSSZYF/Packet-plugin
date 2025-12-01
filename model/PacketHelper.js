@@ -43,7 +43,7 @@ export const Send = async (
     const data = pb.encode(typeof content === 'object' ? content : JSON.parse(content))
     const req = await e.bot.sendApi('send_pb', {
       cmd: cmd,
-      data: Buffer.from(data).toString("hex")
+      hex: Buffer.from(data).toString("hex")
     })
     return pb.decode(req.data)
   } catch (error) {
