@@ -14,7 +14,7 @@
 ## 安装
 ```
 cd plugins
-git clone https://gitee.com/HDTianRu/Packet-plugin
+git clone https://gitee.com/CSSZYF/Packet-plugin
 cd ..
 pnpm install
 ```
