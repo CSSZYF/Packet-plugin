@@ -45,7 +45,7 @@ export const Send = async (
       cmd: cmd,
       hex: Buffer.from(data).toString("hex")
     })
-    return pb.decode(req.data)
+    return pb.decode(req.hex)
   } catch (error) {
     logger.error(`sendMessage failed: ${error.message}`, error)
   }
